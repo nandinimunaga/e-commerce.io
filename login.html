@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Sign-Up Page</title>
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #ffffff;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin-top: 100px;
+        }
+
+        .card {
+            border: none;
+           
+        }
+
+        .card-header {
+            background-color: #c2f1c7;
+            color: #fff;
+            text-align: center;
+        }
+
+        .nav-tabs .nav-link {
+            color: #333;
+            font-weight: bold;
+        }
+
+        .tab-content {
+            border: 1px solid #ddd;
+            border-top: none;
+            padding: 20px;
+            background-color: #fff;
+        }
+
+        .form-group label {
+            font-weight: bold;
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            border: none;
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-header">
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="login-tab" data-toggle="tab" href="#login-form">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="signup-tab" data-toggle="tab" href="#signup-form">Sign Up</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="card-body">
+                <div class="tab-content">
+                    <!-- Login Form -->
+                    <div class="tab-pane fade show active" id="login-form">
+                        <h4 class="text-center">Login</h4>
+                        <form>
+                            <div class="form-group">
+                                <label for="loginUsername">Username,Email Or Mobile</label>
+                                <input type="text" class="form-control" id="loginUsername" placeholder="Enter your usernme,Email Or Mobile">
+                            </div>
+                            <div class="form-group">
+                                <label for="loginPassword">Password</label>
+                                <input type="password" class="form-control" id="loginPassword" placeholder="Enter your password">
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Login</button>
+                        </form>
+                    </div>
+                    <!-- Sign-Up Form -->
+                    <div class="tab-pane fade" id="signup-form">
+                        <h4 class="text-center">Sign Up</h4>
+                        <form>
+                            <div class="form-group">
+                                <label for="signupEmail">Email</label>
+                                <input type="email" class="form-control" id="signupEmail" placeholder="Enter your email">
+                            </div>
+                            <div class="form-group">
+                                <label for="signupPassword">Create Password</label>
+                                <input type="password" class="form-control" id="signupPassword" placeholder="Enter your password">
+                            </div>
+                            <div class="form-group">
+                                <label for="signupPassword">Confirm Password</label>
+                                <input type="password" class="form-control" id="signupPassword" placeholder="Enter your password">
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Sign Up</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Include Bootstrap JS (Optional) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
